@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useCart } from "../context/cart";
+import { useCart } from "../Context/Cart";
 
 export default function Cart() {
   const { cartItems, removeFromCart } = useCart();

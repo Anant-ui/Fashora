@@ -1,6 +1,6 @@
 import { sampleProducts } from "../Data/products";
 import { motion } from "framer-motion";
-import { useCart } from "../context/cart"; 
+import { useCart } from "../Context/Cart"; 
 
 export default function Featured() {
   const { addToCart } = useCart(); 

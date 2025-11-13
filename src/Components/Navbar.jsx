@@ -1,6 +1,7 @@
+// src/Components/Navbar.jsx
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useCart } from "../context/cart"; 
+import { useCart } from "../Context/Cart"; 
 import { ShoppingCart } from "lucide-react";
 
 export default function Navbar() {
@@ -24,14 +25,12 @@ export default function Navbar() {
         <Link to="/about" className="hover:text-brand-gold transition">About</Link>
         <Link to="/contact" className="hover:text-brand-gold transition">Contact</Link>
 
-
         <Link
           to="/cart"
           className="relative bg-brand-gold text-white px-4 py-2 rounded-full hover:shadow-md transition flex items-center gap-2"
         >
           <ShoppingCart size={18} />
           <span>Cart</span>
-
 
           <span className="absolute -top-2 -right-2 text-black text-xs rounded-full px-2">
             {itemCount > 0 ? itemCount : 0}
