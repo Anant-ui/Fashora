@@ -5,7 +5,7 @@ import Hero from "./Components/Hero.jsx";
 import Featured from "./Components/Featured.jsx";
 import About from "./Components/About.jsx";
 import Contact from "./Components/Contact.jsx";
-import Cart from "./Components/Cart.jsx";
+import Cart from "./Components/Cartt.jsx";
 
 
 export default function App() {
