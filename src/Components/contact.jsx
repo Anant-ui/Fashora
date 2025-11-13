@@ -6,7 +6,6 @@ export default function Contact() {
       id="contact"
       className="min-h-[90vh] flex flex-col justify-center items-center px-6 pt-28 bg-gradient-to-b from-yellow-50 via-white to-yellow-100 overflow-hidden"
     >
-   
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +21,6 @@ export default function Contact() {
         </p>
       </motion.div>
 
-    
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -75,7 +73,6 @@ export default function Contact() {
         </form>
       </motion.div>
 
-    
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 0.15, x: 0 }}

@@ -1,7 +1,7 @@
 // src/Components/Navbar.jsx
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useCart } from "../Context/Cart"; 
+import { useCart } from "../context/cart"; 
 import { ShoppingCart } from "lucide-react";
 
 export default function Navbar() {
