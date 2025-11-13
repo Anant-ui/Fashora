@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useCart } from "../context/cart"; // ✅ Import cart context
-import { ShoppingCart } from "lucide-react"; // optional icon (if you have lucide-react)
+import { useCart } from "../context/cart"; 
+import { ShoppingCart } from "lucide-react";
 
 export default function Navbar() {
   const { cartItems } = useCart();
@@ -24,7 +24,7 @@ export default function Navbar() {
         <Link to="/about" className="hover:text-brand-gold transition">About</Link>
         <Link to="/contact" className="hover:text-brand-gold transition">Contact</Link>
 
-        {/* 🛒 Cart Button */}
+
         <Link
           to="/cart"
           className="relative bg-brand-gold text-white px-4 py-2 rounded-full hover:shadow-md transition flex items-center gap-2"
