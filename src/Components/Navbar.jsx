@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useCart } from "../context/CartContext"; // ✅ Import cart context
+import { useCart } from "../context/cart"; // ✅ Import cart context
 import { ShoppingCart } from "lucide-react"; // optional icon (if you have lucide-react)
 
 export default function Navbar() {
