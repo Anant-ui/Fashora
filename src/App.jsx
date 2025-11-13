@@ -1,5 +1,5 @@
 // src/App.jsx
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router";
 import Navbar from "./components/navbar.jsx";
 import Hero from "./components/hero.jsx";
 import Featured from "./components/featured.jsx";
