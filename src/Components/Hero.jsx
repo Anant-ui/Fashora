@@ -7,7 +7,6 @@ export default function Hero() {
   const [sparks, setSparks] = useState([]);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-  // Sparks for button hover
   const handleHover = () => {
     const newSparks = Array.from({ length: 8 }).map(() => ({
       id: Math.random(),
@@ -20,7 +19,7 @@ export default function Hero() {
 
   const handleShopNow = () => navigate("/featured");
 
-  // Mouse movement for parallax shapes
+ 
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePos({ x: e.clientX, y: e.clientY });
@@ -32,7 +31,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden bg-gradient-to-tr from-cyan-200 via-white to-pink-200">
       
-      {/* ===== Floating Glassy Blobs ===== */}
+     
       {[...Array(3)].map((_, i) => (
         <motion.div
           key={i}
@@ -56,7 +55,6 @@ export default function Hero() {
         />
       ))}
 
-      {/* ===== Floating Geometric Shapes ===== */}
       {[...Array(6)].map((_, i) => (
         <motion.div
           key={i}
@@ -78,7 +76,7 @@ export default function Hero() {
         />
       ))}
 
-      {/* ===== Futuristic Grid Lines (Optional) ===== */}
+   
       <motion.div
         className="absolute inset-0 w-full h-full"
         animate={{ opacity: [0.1, 0.2, 0.1] }}
@@ -88,7 +86,7 @@ export default function Hero() {
         <div className="w-full h-full bg-[repeating-linear-gradient(0deg,rgba(255,255,255,0.05),rgba(255,255,255,0.05) 1px,transparent 1px,transparent 20px)] absolute top-0 left-0" />
       </motion.div>
 
-      {/* ===== Hero Content ===== */}
+   
       <div className="relative z-10 flex flex-col justify-center items-center text-center">
        <motion.h1
   className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500"
@@ -108,7 +106,6 @@ export default function Hero() {
           Discover exclusive fashion pieces and accessories that bring your personality to life.
         </motion.p>
 
-        {/* Button with sparks */}
         <div className="relative inline-block">
           <motion.button
             whileHover={{ scale: 1.05 }}
