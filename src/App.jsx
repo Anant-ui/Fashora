@@ -1,11 +1,11 @@
 // src/App.jsx
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import Featured from "./components/Featured.jsx";
-import About from "./components/About.jsx";
+import Navbar from "./components/navbar.jsx";
+import Hero from "./components/hero.jsx";
+import Featured from "./components/featured.jsx";
+import About from "./components/about.jsx";
 import Contact from "./components/contact.jsx";
-import Cart from "./components/Cartt.jsx";
+import Cart from "./components/cartt.jsx";
 
 
 export default function App() {
